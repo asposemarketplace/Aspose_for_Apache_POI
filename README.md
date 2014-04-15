@@ -1,4 +1,4 @@
 Aspose for Apache POI
 =====================
 
-Aspose for Apache POI provides source code examples for features missing in Apache POI. In addition, there are several use cases where Apache POI implementation is: 1) Quite complex 2) Requires strong File Format knowledge This repository provides Aspose source code examples for all the above cases
+Aspose for Apache POI is a project to provide comparative source code examples to do the same file processing tasks using Aspose for Java APIs and Apache POI. Additionally, this project provides source code examples for advanced features offered by Aspose which are missing in Apache POI.

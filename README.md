@@ -16,6 +16,13 @@ Below are some code comparisons and features of Aspose that are not available in
 * [Code Comparison for common features in **Aspose.Words** and **Apache POI WP**](https://github.com/asposemarketplace/Aspose_for_Apache_POI/wiki/Aspose.Words-vs-Apache-POI-WP)
 * [Missing Features of Apache POI WP available in Aspose.Words](https://github.com/asposemarketplace/Aspose_for_Apache_POI/wiki/Missing-Features-of-Apache-POI-WP-available-in-Aspose.Words)
 
+These examples are helpful for developers who want to compare Apache POI with Aspose OR migrate from Apache POI to Aspose.
+
+### Feedback and Suggestions
+
+* Many more examples are yet to come. [Keep visiting us](http://www.aspose.com/java/total-component.aspx).
+* Raise your queries and suggest more examples via [Aspose Forums](http://www.aspose.com/community/forums/default.aspx) or via this social coding site.
+
 ## Why Aspose for Apache POI ?
 
 The developers looking for file format libraries may need to walk through the features provided by the libraries available on the market. Mainly, two factors are considered when choosing an option:

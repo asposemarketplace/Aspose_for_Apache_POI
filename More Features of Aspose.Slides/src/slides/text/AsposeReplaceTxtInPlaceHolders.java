@@ -21,7 +21,7 @@ public class AsposeReplaceTxtInPlaceHolders
 		for (int i = 0 ; i < slide.getShapes().getCount() ; i++)
 		{
 		    shape = slide.getShapes().get_Item(i);
-		    if (shape.getPlaceholder()!=null)
+		    if (shape.getPlaceholder() != null)
 		    {
 		        //Change the text of each placeholder
 		        ((AutoShapeEx)shape).getTextFrame().setText("This is Placeholder");

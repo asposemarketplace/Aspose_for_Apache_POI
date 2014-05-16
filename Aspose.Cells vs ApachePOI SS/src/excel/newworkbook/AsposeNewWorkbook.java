@@ -10,7 +10,7 @@ public class AsposeNewWorkbook
 		Workbook workbook = new Workbook(); // Creating a Workbook object
 
 		//Workbooks can be saved in many formats
-		workbook.save("newWorkBook.xlsx", FileFormatType.XLSX);
+		workbook.save("data/newWorkBook.xlsx", FileFormatType.XLSX);
 	
 		System.out.println("Worksheets are saved successfully."); // Print Message
 	}

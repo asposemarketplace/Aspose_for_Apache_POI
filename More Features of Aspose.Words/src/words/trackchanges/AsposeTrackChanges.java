@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) Aspose 2002-2014. All Rights Reserved.
+ */
+
 package words.trackchanges;
 
 import com.aspose.words.Document;

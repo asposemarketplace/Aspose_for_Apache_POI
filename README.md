@@ -17,6 +17,7 @@ Below are some code comparisons and features of Aspose that are not available in
 * [Missing Features of Apache POI WP available in Aspose.Words](https://github.com/asposemarketplace/Aspose_for_Apache_POI/wiki/Missing-Features-of-Apache-POI-WP-available-in-Aspose.Words)
 
 **Aspose.Email vs Apache POI Outlook (HSMF)**
+* [Code Comparison for common features in **Aspose.Email** and **Apache POI - HSMF**](https://github.com/asposemarketplace/Aspose_for_Apache_POI/wiki/Aspose.Email-vs-Apache-POI---HSMF)
 * [Missing Features of Apache POI Outlook HSMF available in Aspose.Email](https://github.com/asposemarketplace/Aspose_for_Apache_POI/wiki/Missing-Features-of-Apache-POI-Outlook-HSMF-available-in-Aspose.Email)
 
 

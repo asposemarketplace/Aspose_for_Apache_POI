@@ -29,7 +29,7 @@ public class XMLMailMerge
         org.w3c.dom.Document xmlData = db.parse("data/Customers.xml");
 
         // Open a template document.
-        Document doc = new Document("data/TestFile.doc");
+        Document doc = new Document("data/mergeDoc.doc");
 
         // Note that this class also works with a single repeatable region (and any nested regions).
         // To merge multiple regions at the same time from a single XML data source, use the XmlMailMergeDataSet class.

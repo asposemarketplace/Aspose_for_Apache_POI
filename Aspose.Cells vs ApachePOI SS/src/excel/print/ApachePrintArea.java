@@ -12,10 +12,10 @@ public class ApachePrintArea
 	{
 		Workbook wb = new HSSFWorkbook();
 	    Sheet sheet = wb.createSheet("Sheet1");
-	    //sets the print area for the first sheet
-	    wb.setPrintArea(0, "$A$1:$C$2");
-	    
-	    //Alternatively:
+		//sets the print area for the first sheet
+		wb.setPrintArea(0, "$A$1:$F$20");
+
+		//Alternatively:
 	    wb.setPrintArea(
 	            0, //sheet index
 	            0, //start column

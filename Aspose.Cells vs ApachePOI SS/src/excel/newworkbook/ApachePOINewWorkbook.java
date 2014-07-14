@@ -6,20 +6,15 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 public class ApachePOINewWorkbook
 {
-	public void createNewWorkbook() throws Exception
+	public static void main(String[] args) throws Exception
 	{
 		Workbook wb = new HSSFWorkbook();
 
 		FileOutputStream fileOut;
-		fileOut = new FileOutputStream("newWorkBook.xls");
+		fileOut = new FileOutputStream("data/newWorkBook_Apache.xls");
 		wb.write(fileOut);
 		fileOut.close();
 
 		System.out.println("File Created.");
-	}
-	// =======================================================
-	public static void main(String[] args) throws Exception
-	{
-		new ApachePOINewWorkbook().createNewWorkbook();
 	}
 }

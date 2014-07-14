@@ -9,7 +9,7 @@ import org.apache.poi.ss.util.WorkbookUtil;
 
 public class ApachePOINewWorksheet
 {
-	public void createNewWorksheet() throws Exception
+	public static void main(String[] args) throws Exception
 	{
 		Workbook wb = new HSSFWorkbook(); // or new XSSFWorkbook();
 		Sheet sheet1 = wb.createSheet("new sheet");
@@ -39,10 +39,4 @@ public class ApachePOINewWorksheet
 		//Print Message
         System.out.println("Sheet added successfully.");
 	}
-
-	public static void main(String[] args) throws Exception
-	{
-		new ApachePOINewWorksheet().createNewWorksheet();
-	}
-
 }

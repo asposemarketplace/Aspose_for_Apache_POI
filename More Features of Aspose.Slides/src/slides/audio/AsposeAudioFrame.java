@@ -21,27 +21,36 @@ package slides.audio;
 import java.io.File;
 import java.io.FileInputStream;
 
+import com.aspose.slides.AudioPlayModePreset;
+import com.aspose.slides.AudioVolumeMode;
+import com.aspose.slides.IAudioFrame;
+import com.aspose.slides.ISlide;
 import com.aspose.slides.Presentation;
-import com.aspose.slides.Slide;
+import com.aspose.slides.SaveFormat;
 
 public class AsposeAudioFrame
 {
 	public static void main(String[] args) throws Exception
 	{
-		//Instantiate a Presentation object that represents a PPT file
-		Presentation pres = new Presentation("data/presentation.ppt");
+		//Instantiate Prseetation class that represents the PPTX
+		Presentation pres = new Presentation();
 
-		//Accessing a slide using its slide position
-		Slide slide = pres.getSlideByPosition(2);
+		//Get the first slide
+		ISlide sld = pres.getSlides().get_Item(0);
 
-		//Opening the audio file as a stream
-		FileInputStream fstr = new FileInputStream(new File("C:\\logon.wav"));
+		//Load the wav sound file to stram
+		 try{
+		       FileInputStream fstr = new FileInputStream(new File("C:\\logon.wav"));
+		       //Add Audio Frame
+		       IAudioFrame af = sld.getShapes().addAudioFrameEmbedded(50, 150, 100, 100, fstr);
 
-		//Adding the embedded audio frame into the slide
-		slide.getShapes().addAudioFrameEmbedded(2600, 1000, 500, 500, fstr);
-
-		//Writing the presentation as a PPT file
-		pres.write("data/AsposeAudio.ppt");
+		       //Set Play Mode and Volume of the Audio
+		       af.setPlayMode(AudioPlayModePreset.Auto);
+		       af.setVolume(AudioVolumeMode.Loud);
+		   }
+		   catch(Exception e){}
+		//Write the PPTX file to disk
+		pres.save("data/AsposeAudio.pptx", SaveFormat.Pptx);
 		
 		System.out.println("Audio Control Added.");
 	}

@@ -21,68 +21,78 @@ package slides.comments;
 import com.aspose.slides.Comment;
 import com.aspose.slides.CommentAuthor;
 import com.aspose.slides.Comments;
+import com.aspose.slides.IComment;
+import com.aspose.slides.ICommentAuthor;
+import com.aspose.slides.ICommentCollection;
+import com.aspose.slides.ISlide;
 import com.aspose.slides.Presentation;
+import com.aspose.slides.SaveFormat;
 import com.aspose.slides.Slide;
 
 public class AsposeComments
 {
 	public static void main(String[] args)
 	{
-        //======================================
-        // Adding Slide Comments
-        //======================================
+		// ======================================
+		// Adding Slide Comments
+		// ======================================
 		Presentation pres = new Presentation();
-		
-		//Getting first slide
-		Slide slide = pres.getSlides().get_Item(0);
-		 
-		//Adding Author
-		CommentAuthor author = pres.getCommentAuthors().addAuthor("Aspose");
-		
-		//Position of comments
-		java.awt.Point point = new  java.awt.Point(100,100);
-		
-		java.util.Date date = new java.util.Date();
-		
-		//Adding Slide comments
-		slide.getSlideComments().addComment(author, "MF", "Hello User, this is slide comment", date, point);
-		
-		//Adding Empty slide
-		slide = pres.addEmptySlide();
-		
-		//Position of comments
-		java.awt.Point point2 = new java.awt.Point(500,1400);
-		   
-		//Adding Slide comments
-		slide.getSlideComments().addComment(author,"MF","Hello User, this is second slide comment", date,point2);
-		
-		Comments comments = slide.getSlideComments();
-		
-		//Accessing the comment at index 0 for slide 1
-		String str = comments.get_Item(0).getText();
-		
-		pres.write("data/AsposeComments.ppt");
-        
-        //Print Message
-        System.out.println("Comments added successfully.");
-        
-        
-        //======================================
-        // Accessing Slide Comments
-        //======================================
-        
-        java.text.DateFormat dateFormat = new java.text.SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
-        for (int i=1; i<=pres.getSlides().getLastSlidePosition();i++)
-        {
-        	slide = pres.getSlideByPosition(i);
-        	Comments comments1 = slide.getSlideComments();
-        	
-        	for (int j = 0 ; j < comments1.getCount() ; j++ )
-        	{
-        		Comment comment = comments1.get_Item(j); 
-        		System.out.println("\nSlide :" + Integer.toString(i)+ " has comment: " + comment.getText() + " with Author: " + comment.getAuthor().getName()  + "\nPosted on :" + dateFormat.format(comment.getCreatedTime()) + "\n");
-        	}
-        }
+		// Adding Empty slide
+		pres.getSlides().addEmptySlide(pres.getLayoutSlides().get_Item(0));
+
+		// Adding Author
+		ICommentAuthor author = pres.getCommentAuthors().addAuthor("Aspose", "AS");
+
+		// Position of comments
+		java.awt.geom.Point2D.Float point = new java.awt.geom.Point2D.Float(0.2f, 0.2f);
+		java.util.Date date = new java.util.Date();
+
+		// Adding slide comment for an author on slide 1
+		author.getComments().addComment("Hello Mudassir, this is slide comment",
+				pres.getSlides().get_Item(0), point, date);
+
+		// Adding slide comment for an author on slide 1
+		author.getComments().addComment("Hello Mudassir, this is second slide comment",
+				pres.getSlides().get_Item(1), point, date);
+
+		// Accessing ISlide 1
+		ISlide slide = pres.getSlides().get_Item(0);
+
+		// if null is passed as an argument then it will bring comments from all
+		// authors on selected slide
+		IComment[] Comments = slide.getSlideComments(author);
+
+		// Accessing the comment at index 0 for slide 1
+		String str = Comments[0].getText();
+
+		pres.save("data/AsposeComments.pptx", SaveFormat.Pptx);
+
+		if (Comments.length > 0)
+		{
+			// Select comments collection of Author at index 0
+			ICommentCollection commentCollection = Comments[0].getAuthor().getComments();
+
+			String Comment = commentCollection.get_Item(0).getText();
+		}
+
+		// ======================================
+		// Accessing Slide Comments
+		// ======================================
+
+		// Presentation pres = new Presentation("data/AsposeComments.pptx");
+		for (ICommentAuthor author1 : pres.getCommentAuthors())
+		{
+			for (IComment comment : author1.getComments())
+			{
+				System.out.println("ISlide :"
+								+ comment.getSlide().getSlideNumber()
+								+ " has comment: " + comment.getText()
+								+ " with Author: " + comment.getAuthor().getName()
+								+ " posted on time :" + comment.getCreatedTime() + "\n");
+			}
+		}
+
+		System.out.println("Done");				
 	}
 }

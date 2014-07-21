@@ -75,7 +75,6 @@ public class AsposeRemoveSmartArtNodes
 					}
 				}
 			}
-
 		}
 		// Save Presentation
 		pres1.save("data/AsposeRemoveSmartArtNodeByPosition.pptx",	SaveFormat.Pptx);

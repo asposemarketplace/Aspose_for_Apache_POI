@@ -1,4 +1,4 @@
-package cells.pivottable;
+package cells.tables;
 
 import com.aspose.cells.Cell;
 import com.aspose.cells.Cells;
@@ -16,8 +16,9 @@ public class AsposeCreatePivotTable
 		Workbook workbook = new Workbook();
 
 		//Obtaining the reference of the newly added worksheet
-		int sheetIndex = workbook.getWorksheets().add();
-		Worksheet sheet = workbook.getWorksheets().get(sheetIndex);
+		Worksheet sheet = workbook.getWorksheets().get(0);
+		sheet.setName("PivotTable");
+		
 		Cells cells = sheet.getCells();
 
 		//Setting the value to the cells
@@ -76,7 +77,7 @@ public class AsposeCreatePivotTable
 		PivotTableCollection pivotTables = sheet.getPivotTables();
 
 		//Adding a PivotTable to the worksheet
-		int index = pivotTables.add("=A1:C8","E3","PivotTable2");
+		int index = pivotTables.add("=A1:C8","E3","PivotTable1");
 
 		//Accessing the instance of the newly added PivotTable
 		PivotTable pivotTable = pivotTables.get(index);
@@ -96,6 +97,7 @@ public class AsposeCreatePivotTable
 		//Saving the Excel file
 		workbook.save("data/AsposePivotTable.xls");
 		
-		System.out.println("Pivot Table created successfully."); // Print Message
+		// Print Message
+		System.out.println("Pivot Table created successfully.");
 	}
 }

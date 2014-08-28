@@ -1,46 +1,37 @@
 package slides.background;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
+import java.io.FileInputStream;
 
-import javax.imageio.ImageIO;
-
+import com.aspose.slides.BackgroundType;
 import com.aspose.slides.FillType;
-import com.aspose.slides.Picture;
+import com.aspose.slides.IPPImage;
+import com.aspose.slides.PictureFillMode;
 import com.aspose.slides.Presentation;
-import com.aspose.slides.Slide;
+import com.aspose.slides.SaveFormat;
 
 public class AsposeAddBackground
 {
-	public static void main(String[] args) throws Exception
+	public static void  main(String[] args) throws Exception
 	{
-        //Instantiate a Presentation object that represents a PPT file
-        Presentation pres = new Presentation("data/presentation.ppt");
+		//Instantiate the Presentation class that represents the presentation file
+		Presentation pres = new Presentation();
 
-        //Accessing a slide using its slide position
-        Slide slide = pres.getSlideByPosition(1);
+		//Set the background with Image
+		pres.getSlides().get_Item(0).getBackground().setType (BackgroundType.OwnBackground);
+		pres.getSlides().get_Item(0).getBackground().getFillFormat().setFillType ( FillType.Picture);
+		pres.getSlides().get_Item(0).getBackground().getFillFormat().getPictureFillFormat().setPictureFillMode( PictureFillMode.Stretch);
 
-        //Disable following master background settings
-        slide.setFollowMasterBackground(false);
+		//Set the picture
+		IPPImage imgx =null;
+		imgx = pres.getImages().addImage(new FileInputStream(new File("data/background.jpg")));
 
-        //Setting the fill type of the background to picture
-        slide.getBackground().getFillFormat().setType(FillType.Picture);
+		//Image imgx = pres.getImages().addImage(image);
+		//Add image to presentation's images collection
 
-        //Creating a picture object that will be used as a slide background
-        Picture pic = new Picture(pres , ImageIO.read(new File("data/background.jpg")));
+		pres.getSlides().get_Item(0).getBackground().getFillFormat().getPictureFillFormat().getPicture().setImage (imgx);
 
-        //Adding the picture object to pictures collection of the presentation
-        //After the picture object is added, the picture is given a unique picture Id
-        int picId = pres.getPictures().add(pic);
-
-        //Setting the picture Id of the slide background to the Id of the picture object
-        slide.getBackground().setPictureId(picId);
-
-        //Writing the presentation as a PPT file
-        pres.write("data/AddBG_Aspose.ppt");
-        
-        //Print Message
-        System.out.println("Background set successfully.");
+		//Write the presentation to disk
+		pres.save("data/AsposeBG.pptx",SaveFormat.Pptx);
 	}
 }

@@ -9,8 +9,6 @@ public class ApacheCreatePresentation
 {
 	public static void main(String[] args) throws Exception
 	{
-		double startTime = System.nanoTime();
-
 		//create a new empty slide show
 		SlideShow ppt = new SlideShow();
 		//add first slide

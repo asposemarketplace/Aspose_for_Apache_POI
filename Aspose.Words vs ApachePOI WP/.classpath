@@ -11,6 +11,6 @@
 	<classpathentry kind="lib" path="lib/ApachePOI/poi-scratchpad-3.11-beta1-20140306.jar"/>
 	<classpathentry kind="lib" path="lib/ApachePOI/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/ApachePOI/xmlbeans-2.3.0.jar"/>
-	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Words vs ApachePOI WP/lib/AsposeWords/Aspose.Words.jdk16.jar"/>
+	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Words vs ApachePOI WP/lib/AsposeWords/aspose-words-14.8.0-jdk16.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

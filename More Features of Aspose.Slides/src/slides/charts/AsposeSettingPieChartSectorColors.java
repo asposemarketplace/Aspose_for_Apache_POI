@@ -21,7 +21,7 @@ public class AsposeSettingPieChartSectorColors
 {
 	public static void main(String[] args)
 	{
-		//Instantiate Presentation class that represents PPTX file//Instantiate Presentation class that represents PPTX file
+		//Instantiate Presentation class that represents PPTX file
 		Presentation pres = new Presentation();
 
 		//Access first slide

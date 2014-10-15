@@ -13,41 +13,46 @@
  * along with this program. If not, see <http://opensource.org/licenses/gpl-3.0.html>;.
  *
  * @author  Shoaib Khan <shoaib.khan@aspose.com>
+ * 
+ * @link	https://asposeapachepoi.codeplex.com/
+ * @link	https://sourceforge.net/projects/asposeforapachepoi/
  * @link    https://github.com/asposemarketplace/Aspose_for_Apache_POI
+ * @link	https://bitbucket.org/asposemarketplace/aspose-for-apache-poi
  */
 
 package slides.text;
 
-import com.aspose.slides.AutoShapeEx;
-import com.aspose.slides.PresentationEx;
-import com.aspose.slides.ShapeEx;
-import com.aspose.slides.SlideEx;
+import com.aspose.slides.IAutoShape;
+import com.aspose.slides.IShape;
+import com.aspose.slides.ISlide;
+import com.aspose.slides.Presentation;
+import com.aspose.slides.SaveFormat;
 
 public class AsposeReplaceTxtInPlaceHolders
 {
 	public static void main(String[] args)
 	{
-		//Instantiate PresentationEx class that represents PPTX
-		PresentationEx pres = new PresentationEx("data/demo.pptx");
+		//Instantiate Presentation class that represents PPTX
+		Presentation pres = new Presentation("data/demo.pptx");
 		
 		//Access first slide
-		SlideEx slide = pres.getSlides().get_Item(0);
+		ISlide slide = pres.getSlides().get_Item(0);
 		
-		ShapeEx shape= null;
+		IShape shape= null;
 		
 		//Iterate through the shapes and set a reference to the table found
-		for (int i = 0 ; i < slide.getShapes().getCount() ; i++)
+		for (int i = 0 ; i < slide.getShapes().size() ; i++)
 		{
 		    shape = slide.getShapes().get_Item(i);
 		    if (shape.getPlaceholder() != null)
 		    {
 		        //Change the text of each placeholder
-		        ((AutoShapeEx)shape).getTextFrame().setText("This is Placeholder");
+		        ((IAutoShape)shape).getTextFrame().setText("This is Placeholder");
 		    }
 		}
 		
 		//Write the PPTX to Disk
-		pres.write("data/AsposeReplaceTxt.pptx");
+		pres.save("data/AsposeReplaceTxt.pptx",SaveFormat.Pptx);
 
         // Status
         System.out.println("Process completed successfully.");

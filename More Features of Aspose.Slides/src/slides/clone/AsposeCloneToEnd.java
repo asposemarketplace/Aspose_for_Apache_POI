@@ -13,27 +13,32 @@
  * along with this program. If not, see <http://opensource.org/licenses/gpl-3.0.html>;.
  *
  * @author  Shoaib Khan <shoaib.khan@aspose.com>
+ * 
+ * @link	https://asposeapachepoi.codeplex.com/
+ * @link	https://sourceforge.net/projects/asposeforapachepoi/
  * @link    https://github.com/asposemarketplace/Aspose_for_Apache_POI
+ * @link	https://bitbucket.org/asposemarketplace/aspose-for-apache-poi
  */
 
 package slides.clone;
 
-import com.aspose.slides.PresentationEx;
-import com.aspose.slides.SlideExCollection;
+import com.aspose.slides.Presentation;
+import com.aspose.slides.ISlideCollection;
+import com.aspose.slides.SaveFormat;
 
-public class AsposeClone
+public class AsposeCloneToEnd
 {
 	public static void main(String[] args)
 	{
-		//Instantiate PresentationEx class that represents a PPTX file
-		PresentationEx pres = new PresentationEx("data/presentation.pptx");
+		//Instantiate Presentation class that represents a PPTX file
+		Presentation pres = new Presentation("data/presentation.pptx");
 		
 		//Clone the desired slide to the end of the collection of slides in the same PPTX
-		SlideExCollection slds = pres.getSlides();
+		ISlideCollection slds = pres.getSlides();
 		slds.addClone(pres.getSlides().get_Item(0));
-		
-		//Write the modified pptx to disk
-		pres.write("data/AsposeClone.pptx");
+
+//Write the modified pptx to disk
+pres.save("data/AsposeClone.pptx", SaveFormat.Pptx);
 
         //Printing the status
         System.out.println("Slide cloned successfully!");

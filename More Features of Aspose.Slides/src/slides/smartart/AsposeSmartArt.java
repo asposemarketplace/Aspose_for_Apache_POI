@@ -13,7 +13,11 @@
  * along with this program. If not, see <http://opensource.org/licenses/gpl-3.0.html>;.
  *
  * @author  Shoaib Khan <shoaib.khan@aspose.com>
+ * 
+ * @link	https://asposeapachepoi.codeplex.com/
+ * @link	https://sourceforge.net/projects/asposeforapachepoi/
  * @link    https://github.com/asposemarketplace/Aspose_for_Apache_POI
+ * @link	https://bitbucket.org/asposemarketplace/aspose-for-apache-poi
  */
 
 package slides.smartart;
@@ -22,13 +26,8 @@ import com.aspose.slides.IShape;
 import com.aspose.slides.ISlide;
 import com.aspose.slides.ISmartArt;
 import com.aspose.slides.Presentation;
-import com.aspose.slides.PresentationEx;
 import com.aspose.slides.SaveFormat;
-import com.aspose.slides.ShapeEx;
-import com.aspose.slides.SlideEx;
-import com.aspose.slides.SmartArtEx;
 import com.aspose.slides.SmartArtLayoutType;
-import com.aspose.slides.SmartArtLayoutTypeEx;
 
 public class AsposeSmartArt
 {
@@ -39,33 +38,33 @@ public class AsposeSmartArt
 		//==================
 		
 		//Instantiate Presentation Class
-	    Presentation pres = new Presentation();
-
-	    //Get first slide
-	    ISlide slide = pres.getSlides().get_Item(0);
-
-	    //Add Smart Art Shape
-	    ISmartArt smart = slide.getShapes().addSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
-
-	    //Saving presentation
-	    pres.save("data/AsposeSmartArt.pptx", SaveFormat.Pptx);
-	    	    
+		Presentation pres = new Presentation();
+		
+		//Get first slide
+		ISlide slide = pres.getSlides().get_Item(0);
+		
+		//Add Smart Art Shape
+		ISmartArt smart = slide.getShapes().addSmartArt(0, 0, 400, 400, SmartArtLayoutType.BasicBlockList);
+		
+		//Saving presentation
+		pres.save("data/AsposeSmartArt.pptx", SaveFormat.Pptx);
+			    
 		//=====================
 		//Accessing Smart Art
 		//=====================
-	    //Get first slide
-	    ISlide slide0 = pres.getSlides().get_Item(0);
-
-	    //Traverse through every shape inside first slide
-	    for(IShape shape : slide0.getShapes())
-	    {
-	        //Check if shape is of SmartArt type
-	        if (shape instanceof ISmartArt)
-	        {
-	            //Typecast shape to SmartArtEx
-	            ISmartArt smartArt = (ISmartArt)shape;
-	        }
-	    }
+		//Get first slide
+		ISlide slide0 = pres.getSlides().get_Item(0);
+		
+		//Traverse through every shape inside first slide
+		for(IShape shape : slide0.getShapes())
+		{
+		    //Check if shape is of SmartArt type
+		    if (shape instanceof ISmartArt)
+		    {
+		        //Typecast shape to SmartArtEx
+		        ISmartArt smartArt = (ISmartArt)shape;
+		    }
+		}
 
 		System.out.println("Smart Art added and Accessed.");
 	}

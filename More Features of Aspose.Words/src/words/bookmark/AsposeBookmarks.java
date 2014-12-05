@@ -23,7 +23,7 @@ public class AsposeBookmarks
 
 		// By name.
 		Bookmark bookmark2 = doc.getRange().getBookmarks().get("AsposeBookmark");
-		
-		doc.save("data/AsposebBookmark.doc", SaveFormat.DOC);
+	
+		doc.save("data/AsposeBookmark.doc", SaveFormat.DOC);
 	}
 }

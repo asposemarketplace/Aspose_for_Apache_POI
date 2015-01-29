@@ -58,7 +58,7 @@ public class ApacheAddImagesInSlides
 		sh2.setFillColor(Color.blue);
 		slide.addShape(sh2);
 		
-		FileOutputStream out = new FileOutputStream(dataPath + "ImageInSlides_Apache.ppt");
+		FileOutputStream out = new FileOutputStream(dataPath + "ImageInSlides_Apache_Out.ppt");
 		ppt.write(out);
 		out.close();
 		

@@ -22,7 +22,7 @@ public class AsposeConvertToImage
 		opts.setImageSize(new Dimension(500, 400));
 		
 		//Save the prsentation to TIFF with specified image size
-		pres.save(dataPath + "Aspose_PPT-TIFF.tiff", SaveFormat.Tiff, opts);
+		pres.save(dataPath + "Aspose_PPT-TIFF_Out.tiff", SaveFormat.Tiff, opts);
 
 		System.out.println("Slide Converted to Image Successfully");
 	}

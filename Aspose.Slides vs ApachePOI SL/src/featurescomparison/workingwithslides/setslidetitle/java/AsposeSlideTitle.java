@@ -24,7 +24,7 @@ public class AsposeSlideTitle
 		((IAutoShape)slide.getShapes().get_Item(1)).getTextFrame().setText("Slide Title Sub-Heading");
 
 	    //Write output to disk
-	    pres.save(dataPath + "Aspose_SlideTitle.pptx",SaveFormat.Pptx);
+	    pres.save(dataPath + "Aspose_SlideTitle_Out.pptx",SaveFormat.Pptx);
 	    
 	    System.out.println("Presentation with Title Saved.");
 	}

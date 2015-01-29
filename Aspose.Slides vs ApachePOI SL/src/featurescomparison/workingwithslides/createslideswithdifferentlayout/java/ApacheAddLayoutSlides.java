@@ -33,7 +33,7 @@ public class ApacheAddLayoutSlides
 	    XSLFSlideLayout titleBodyLayout = defaultMaster.getLayout(SlideLayout.TITLE_AND_CONTENT);
 	    XSLFSlide slide2 = ppt.createSlide(titleBodyLayout);
 
-	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_Layouts.pptx");
+	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_Layouts_Out.pptx");
 		ppt.write(out);
 		out.close();
 		

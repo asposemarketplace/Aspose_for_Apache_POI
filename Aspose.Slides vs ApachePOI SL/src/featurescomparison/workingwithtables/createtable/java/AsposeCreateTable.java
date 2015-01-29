@@ -58,7 +58,7 @@ public class AsposeCreateTable
 		tbl.getRows().get_Item(0).get_Item(0).getTextFrame().setText("Merged Cells");
 		
 		//Save PPTX to Disk
-		pres.save(dataPath + "AsposeTable.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeTable_Out.pptx", SaveFormat.Pptx);
 		
         System.out.println("Program executed successfully");
 	} 

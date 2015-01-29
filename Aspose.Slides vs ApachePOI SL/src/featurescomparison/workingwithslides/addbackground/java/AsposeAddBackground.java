@@ -34,7 +34,7 @@ public class AsposeAddBackground
 		pres.getSlides().get_Item(0).getBackground().getFillFormat().getPictureFillFormat().getPicture().setImage (imgx);
 
 		//Write the presentation to disk
-		pres.save(dataPath + "AsposeBG.pptx",SaveFormat.Pptx);
+		pres.save(dataPath + "AsposeBG_Out.pptx",SaveFormat.Pptx);
 		
 		System.out.println("Background Added.");
 	}

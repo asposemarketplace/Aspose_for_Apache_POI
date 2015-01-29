@@ -44,7 +44,7 @@ public class AsposeHyperlink
 		HypMan.setExternalHyperlinkClick("http://www.aspose.com");
 
 		// Save the PPTX to Disk
-		pres.save(dataPath + "Aspose_Hyperlink.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "Aspose_Hyperlink_Out.pptx", SaveFormat.Pptx);
 		
 		System.out.println("Presentation with hyperlink Saved.");
 	}

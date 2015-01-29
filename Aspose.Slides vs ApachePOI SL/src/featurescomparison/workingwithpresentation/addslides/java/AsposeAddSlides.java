@@ -17,7 +17,7 @@ public class AsposeAddSlides
 		ISlide slide = pres.getSlides().addEmptySlide(pres.getLayoutSlides().get_Item(0));
 		
 		//Save the presentation
-		pres.save(dataPath + "SlidesAdded_Aspose.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "SlidesAdded_Aspose_Out.pptx", SaveFormat.Pptx);
 		
 		System.out.println("Slide Added and Saved.");
 	}

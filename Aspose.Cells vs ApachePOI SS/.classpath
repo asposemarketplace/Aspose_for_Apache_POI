@@ -2,8 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="lib/ApachePOI/poi-3.11-beta1-20140306.jar"/>
 	<classpathentry kind="lib" path="lib/AsposeCells/aspose-cells-7.7.2.jar"/>
-	<classpathentry kind="lib" path="lib/ApachePOI/poi-ooxml-3.11-beta1-20140306.jar"/>
+	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Cells vs ApachePOI SS/lib/ApachePOI/poi-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Cells vs ApachePOI SS/lib/ApachePOI/poi-ooxml-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Cells vs ApachePOI SS/lib/ApachePOI/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Banckle/workspaces/ApachePOI/Aspose.Cells vs ApachePOI SS/lib/ApachePOI/poi-ooxml-schemas-3.11-20141221.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

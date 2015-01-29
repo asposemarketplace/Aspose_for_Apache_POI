@@ -18,7 +18,7 @@ public class ApacheOpenandSave
 		XSLFSlide blankSlide = ppt.createSlide();
 		
 		//save changes in a file
-		FileOutputStream out = new FileOutputStream(dataPath + "EditedPPT_Apache.pptx");
+		FileOutputStream out = new FileOutputStream(dataPath + "EditedPPT_Apache_Out.pptx");
 		ppt.write(out);
 		out.close();
 

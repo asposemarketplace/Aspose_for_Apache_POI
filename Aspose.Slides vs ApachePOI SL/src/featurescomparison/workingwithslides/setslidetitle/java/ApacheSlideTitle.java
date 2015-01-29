@@ -18,7 +18,7 @@ public class ApacheSlideTitle
 		title.setText("Hello, World!");
 	    
 	    //save changes 
-	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_SlideTitle.ppt");
+	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_SlideTitle_Out.ppt");
 	    ppt.write(out);
 	    out.close();
 	    

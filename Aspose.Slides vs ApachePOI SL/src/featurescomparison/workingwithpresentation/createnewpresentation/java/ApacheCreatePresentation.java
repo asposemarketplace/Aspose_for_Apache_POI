@@ -16,7 +16,7 @@ public class ApacheCreatePresentation
 		//add first slide
 		Slide s1 = ppt.createSlide();
 		//save changes in a file
-		FileOutputStream out = new FileOutputStream(dataPath + "NewPPT_Apache.ppt");
+		FileOutputStream out = new FileOutputStream(dataPath + "NewPPT_Apache_Out.ppt");
 		ppt.write(out);
 		out.close();
 

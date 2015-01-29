@@ -103,7 +103,7 @@ public class AsposeAddImagesInSlides
 		shp.getLineFormat().setWidth(5);
 		
 		//Writing the presentation as a PPT file
-		pres.save(dataPath + "ImageInSlides_Aspose.pptx", SaveFormat.Pptx);
+		pres.save(dataPath + "ImageInSlides_Aspose_Out.pptx", SaveFormat.Pptx);
         
         //Print Message
         System.out.println("Shapes added successfully.");

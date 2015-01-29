@@ -1,10 +1,8 @@
 package featurescomparison.workingwithslides.moveslide.java;
 
 import com.aspose.slides.ISlide;
-import com.aspose.slides.ISlideCollection;
 import com.aspose.slides.Presentation;
 import com.aspose.slides.SaveFormat;
-import com.aspose.slides.Slide;
 
 public class AsposeMoveSlides
 {
@@ -22,7 +20,7 @@ public class AsposeMoveSlides
 		slide.setSlideNumber(2);
 
 		//Writing the presentation as a PPT file
-		pres.save(dataPath + "Aspose_ReOrdered_Slides.ppt", SaveFormat.Ppt);
+		pres.save(dataPath + "Aspose_ReOrdered_Slides_Out.ppt", SaveFormat.Ppt);
 		System.out.println("Slides ReOrdered Successfuly.");
 	}
 }

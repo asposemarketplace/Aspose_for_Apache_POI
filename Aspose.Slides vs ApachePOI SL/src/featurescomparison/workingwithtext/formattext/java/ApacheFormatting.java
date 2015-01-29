@@ -42,7 +42,7 @@ public class ApacheFormatting
 	    r4.setUnderline(true);
 
 	    //save changes in a file
-		FileOutputStream out = new FileOutputStream(dataPath + "Formatted Text_Apache.pptx");
+		FileOutputStream out = new FileOutputStream(dataPath + "Formatted_Text_Apache_Out.pptx");
 		ppt.write(out);
 		out.close();
 

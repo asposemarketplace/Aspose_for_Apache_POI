@@ -60,7 +60,7 @@ public class AsposeFormatting
 	    port2.getPortionFormat().getFillFormat().getSolidFillColor().setColor(Color.GREEN);
 
 	    //Save the PPTX to disk
-	    pres.save(dataPath + "FontFormatting_Aspose.pptx", SaveFormat.Pptx);
+	    pres.save(dataPath + "FontFormatting_Aspose_Out.pptx", SaveFormat.Pptx);
 	    
 	    System.out.println("Formatted Presentation Saved.");
 	}

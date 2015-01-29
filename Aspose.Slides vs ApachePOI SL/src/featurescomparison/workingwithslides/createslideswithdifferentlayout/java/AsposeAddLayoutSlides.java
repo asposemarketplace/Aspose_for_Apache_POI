@@ -25,7 +25,7 @@ public class AsposeAddLayoutSlides
 		//Do some work on the newly added slide
 
 		//Save the PPTX file to the Disk
-        pres.save(dataPath + "LayoutSlidesAdded_Aspose.pptx", SaveFormat.Pptx);
+        pres.save(dataPath + "LayoutSlides_Aspose_Out.pptx", SaveFormat.Pptx);
 
         //Printing the status
         System.out.println("Slides added successfully!");

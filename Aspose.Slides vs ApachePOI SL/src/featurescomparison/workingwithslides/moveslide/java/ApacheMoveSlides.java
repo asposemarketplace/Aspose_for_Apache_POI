@@ -23,7 +23,7 @@ public class ApacheMoveSlides
 	    ppt.setSlideOrder(slides[0], 4); 
 	    
 	    //save changes in a file
-	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_ReOrdered_Slides.pptx");
+	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_ReOrdered_Slides_Out.pptx");
 	    ppt.write(out);
 	    out.close();
 	    

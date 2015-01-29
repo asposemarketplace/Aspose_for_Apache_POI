@@ -28,7 +28,7 @@ public class ApacheAddBackground
 	    fill.setPictureData(idx);
 	    
 	    //save changes in a file
-	    FileOutputStream out = new FileOutputStream(dataPath + "AddBG_Apache.ppt");
+	    FileOutputStream out = new FileOutputStream(dataPath + "AddBG_Apache_Out.ppt");
 	    ppt.write(out);
 	    out.close();
 	    

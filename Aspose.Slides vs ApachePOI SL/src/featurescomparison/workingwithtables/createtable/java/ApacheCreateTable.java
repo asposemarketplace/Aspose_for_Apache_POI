@@ -58,7 +58,7 @@ public class ApacheCreateTable
 		slide.addShape(table);
 		table.moveTo(100, 100);
 		
-		FileOutputStream out = new FileOutputStream(dataPath + "Table_Apache.ppt");
+		FileOutputStream out = new FileOutputStream(dataPath + "Table_Apache_Out.ppt");
 		ppt.write(out);
 		out.close();
 		

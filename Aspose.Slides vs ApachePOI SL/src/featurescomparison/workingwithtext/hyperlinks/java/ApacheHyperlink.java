@@ -25,7 +25,7 @@ public class ApacheHyperlink
 		link.setAddress("http://poi.apache.org");
 	    
 	    //save changes 
-	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_Hyperlink.ppt");
+	    FileOutputStream out = new FileOutputStream(dataPath + "Apache_Hyperlink_Out.ppt");
 	    ppt.write(out);
 	    out.close();
 	    

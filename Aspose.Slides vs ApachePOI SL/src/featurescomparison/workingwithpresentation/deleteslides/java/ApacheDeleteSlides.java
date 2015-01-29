@@ -15,7 +15,7 @@ public class ApacheDeleteSlides
 		
 		ppt.removeSlide(0); // 0-based index of a slide to be removed
 		
-		FileOutputStream out = new FileOutputStream(dataPath + "DeleteSlide_Apache.ppt");
+		FileOutputStream out = new FileOutputStream(dataPath + "DeleteSlide_Apache_Out.ppt");
 		ppt.write(out);
 		out.close();
 		

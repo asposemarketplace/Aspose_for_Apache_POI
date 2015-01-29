@@ -21,7 +21,7 @@ public class AsposeDeleteSlides
 		pres.getSlides().remove(slide); //Removing a slide using its reference
 
         //Writing the presentation as a PPTX file
-        pres.save(dataPath + "DeleteSlides_Aspose.pptx", SaveFormat.Pptx);
+        pres.save(dataPath + "DeleteSlides_Aspose_Out.pptx", SaveFormat.Pptx);
 
         //Printing the status
         System.out.println("Slide removed successfully!");

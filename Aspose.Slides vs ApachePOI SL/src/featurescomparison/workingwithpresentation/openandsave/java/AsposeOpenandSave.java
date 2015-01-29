@@ -17,7 +17,7 @@ public class AsposeOpenandSave
 		ISlide slide = pres.getSlides().addEmptySlide(pres.getLayoutSlides().get_Item(0));
 		
 		//Save the presentation
-		pres.save(dataPath + "EditedPPT_Aspose.ppt", SaveFormat.Ppt);
+		pres.save(dataPath + "EditedPPT_Aspose_Out.ppt", SaveFormat.Ppt);
 		
 		System.out.println("Presentation Edited and Saved.");
 	}

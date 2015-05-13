@@ -14,6 +14,7 @@ public class NumberFormatForChartDataCell
     public static void main(String[] args)
     {
 	String dataPath = "src/asposefeatures/workingwithcharts/numberformatforchartdatacell/data/";
+	
 	// Instantiate the presentation//Instantiate the presentation
 	Presentation pres = new Presentation();
 

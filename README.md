@@ -1,3 +1,12 @@
+> ### :sparkles: Visit New Repos for Latest Updates :sparkles:
+
+> For further releases and updates, please follow new repositories mentioned below:
+
+> * [Aspose.Words Java for Apache POI](https://github.com/asposewords/Aspose_Words_Java)
+> * [Aspose.Cells Java for Apache POI](https://github.com/asposecells/Aspose_Cells_Java)
+> * [Aspose.Slides Java for Apache POI](https://github.com/asposeslides/Aspose_Slides_Java)
+> * [Aspose.Email Java for Apache POI](https://github.com/asposeemail/Aspose_Email_Java)
+
 ## Aspose for Apache POI
 
 Aspose for Apache POI is a project to provide comparative source code examples to do the same file processing tasks using Aspose for Java APIs and Apache POI. Additionally, this project provides source code examples for advanced features offered by Aspose which are missing in Apache POI.

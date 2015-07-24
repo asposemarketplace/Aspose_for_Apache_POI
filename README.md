@@ -1,11 +1,15 @@
-> ### :sparkles: Visit New Repos for Latest Updates :sparkles:
+### :sparkles: Visit New Repos for Latest Updates :sparkles:
 
-> For further releases and updates, please follow new repositories mentioned below:
+For further releases and updates, please follow these new repositories:
 
-> * [Aspose.Words Java for Apache POI](https://github.com/asposewords/Aspose_Words_Java)
-> * [Aspose.Cells Java for Apache POI](https://github.com/asposecells/Aspose_Cells_Java)
-> * [Aspose.Slides Java for Apache POI](https://github.com/asposeslides/Aspose_Slides_Java)
-> * [Aspose.Email Java for Apache POI](https://github.com/asposeemail/Aspose_Email_Java)
+* [Aspose.Words Java for Apache POI](https://github.com/asposewords/Aspose_Words_Java)
+* [Aspose.Cells Java for Apache POI](https://github.com/asposecells/Aspose_Cells_Java)
+* [Aspose.Slides Java for Apache POI](https://github.com/asposeslides/Aspose_Slides_Java)
+* [Aspose.Email Java for Apache POI](https://github.com/asposeemail/Aspose_Email_Java)
+
+For documentation, please visit [Aspose Docs](www.aspose.com/docs).
+
+---
 
 ## Aspose for Apache POI
 

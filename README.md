@@ -1,4 +1,4 @@
-### :sparkles: Visit New Repos for Latest Updates :sparkles:
+### :sparkles: Visit New Repositories for Latest Updates :sparkles:
 
 For further releases and updates, please follow these new repositories:
 

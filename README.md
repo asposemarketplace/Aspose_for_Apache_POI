@@ -7,7 +7,7 @@ For further releases and updates, please follow these new repositories:
 * [Aspose.Slides Java for Apache POI](https://github.com/asposeslides/Aspose_Slides_Java)
 * [Aspose.Email Java for Apache POI](https://github.com/asposeemail/Aspose_Email_Java)
 
-For documentation, please visit [Aspose Docs](www.aspose.com/docs).
+For documentation, please visit [Aspose Docs](http://www.aspose.com/docs).
 
 ---
 
